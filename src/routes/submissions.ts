@@ -19,7 +19,7 @@ router.get('/moderation-panel', authenticate, authorize('moderator', 'admin', 'o
 
 router.post('/submit', async (req: Request, res: Response) => {
   const submission = req.body;
-  if (!submission.user || !submission.level || !submission.link) {
+  if (!submission.user || !submission.level || !submission.link || !submission.percent || !submission.refreshRate) {
     return res.status(400).json({ error: 'Missing fields' });
   }
 
@@ -51,7 +51,7 @@ router.post('/moderate', authenticate, authorize('moderator', 'admin', 'owner', 
   if (action === 'accept') {
     const levelPath = path.join(LEVELS_DIR, `${submission.level}.json`);
     const levelData = await readJSON(levelPath);
-    levelData.records.push({ user: submission.user, link: submission.link });
+    levelData.records.push({ user: submission.user, link: submission.link, percent: submission.percent, hz: submission.refreshRate });
     await writeJSON(levelPath, levelData);
   } else {
     if (reason) submission.reason = reason;
@@ -76,7 +76,7 @@ router.post('/moderate-batch', authenticate, authorize('moderator', 'admin', 'ow
     if (action === 'accept') {
       const levelPath = path.join(LEVELS_DIR, `${submission.level}.json`);
       const levelData = await readJSON(levelPath);
-      levelData.records.push({ user: submission.user, link: submission.link });
+      levelData.records.push({ user: submission.user, link: submission.link, percent: submission.percent, hz: submission.refreshRate });
       await writeJSON(levelPath, levelData);
     } else if (action === 'reject') {
       if (reason) submission.reason = reason;
