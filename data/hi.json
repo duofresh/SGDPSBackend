@@ -1,0 +1,32 @@
+{
+  "id": 105442671,
+  "name": "Shitty hi",
+  "author": "[A$AP] DeltaFlare",
+  "creators": [],
+  "verifier": "Pengin",
+  "verification": "https://www.youtube.com/watch?v=NmpeOkd-1Ig",
+  "difficulty": 2,
+  "rating": 3,
+  "records": [
+    {
+      "user": "Gamer2052",
+      "link": "https://www.youtube.com/watch?v=3G6RHI95dys"
+    },
+    {
+      "user": "[WD] Wiktor",
+      "link": "https://www.youtube.com/watch?v=f5868TX9naI"
+    },
+    {
+      "user": "[A$AP] DeltaFlare",
+      "link": "https://youtu.be/eue1so72xZ0"
+    },
+    {
+      "user": "MfoGaming1219",
+      "link": "https://youtu.be/gbkg2kfsqj0"
+    },
+    {
+      "user": "Twoft",
+      "link": "https://youtu.be/PBnYur0jABk"
+    }
+  ]
+}

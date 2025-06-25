@@ -1,0 +1,72 @@
+[
+    {
+        "role": "owner",
+        "name": "Prometheus",
+        "link": "https://www.youtube.com/c/PrometheusAlt"
+    },
+    {
+        "role": "owner",
+        "name": "SorryM8",
+        "link": "#"
+    },
+    {
+        "role": "owner",
+        "name": "Wiktor",
+        "link": "https://www.youtube.com/channel/UCD9Q_xZmonsNc3FkQ_I1qTw"
+    },
+    {
+         "role": "admin",
+         "name": "homegrowntag",
+         "link": "https://www.youtube.com/@homegrowntag"
+    },
+    {
+        "role": "admin",
+        "name": "DuoFresh",
+        "link": "https://youtube.com/@duofresh7615?si=5bDKtOxtZqSsxq0G"
+    },
+    {
+        "role": "seniormod",
+        "name": "Revalutionary",
+        "link": "https://www.youtube.com/@RevalutionaryGD"
+    },
+    {
+        "role": "mod",
+        "name": "Vibbin",
+        "link": "https://www.youtube.com/@JustVibbin"
+    },
+    {
+        "role": "mod",
+        "name": "pokemon",
+        "link": "#"
+    },
+    {
+        "role": "mod",
+        "name": "Asteria.",
+        "link": "https://www.youtube.com/@Asteriiiaa"
+    },
+    {
+        "role": "mod",
+        "name": "Phantom",
+        "link": "https://www.youtube.com/@PhantomGT7"
+    },
+    {
+        "role": "mod",
+        "name": "Aster",
+        "link": "https://www.youtube.com/channel/UCWl3zGx7VUhQOHBrebhbc-w"
+    },
+    {
+        "role": "dev",
+        "name": "Prometheus",
+        "link": "https://www.youtube.com/c/PrometheusAlt"
+    },
+    {
+        "role": "dev",
+        "name": "Emonadeo",
+        "link": "https://github.com/Emonadeo"
+    },
+    {
+        "role": "dev",
+        "name": "KrisGra",
+        "link": "https://www.youtube.com/channel/UCrB80p9IxnDthH551FpqlwQ"
+    }
+]
