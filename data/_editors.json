@@ -1,72 +1,32 @@
 [
     {
         "role": "owner",
-        "name": "Prometheus",
-        "link": "https://www.youtube.com/c/PrometheusAlt"
+        "name": "Stellarum",
+        "link": "https://www.youtube.com/channel/UCO3ojEPHpJOGnowyLYBGtIA"
     },
     {
-        "role": "owner",
-        "name": "SorryM8",
-        "link": "#"
+        "role": "helper",
+        "name": "Hykre",
+        "link": "https://www.youtube.com/channel/UC6mK8M2h77o045KNA8vr4OQ"
     },
     {
-        "role": "owner",
-        "name": "Wiktor",
-        "link": "https://www.youtube.com/channel/UCD9Q_xZmonsNc3FkQ_I1qTw"
+        "role": "helper",
+        "name": "rRorTa",
+        "link": "https://www.youtube.com/channel/UCv3dEkfRnLBoO08NkPDGI4w"
     },
     {
-         "role": "admin",
-         "name": "homegrowntag",
-         "link": "https://www.youtube.com/@homegrowntag"
+        "role": "helper",
+        "name": "Xplode",
+        "link": "https://www.youtube.com/@xplode09"
     },
     {
-        "role": "admin",
-        "name": "DuoFresh",
-        "link": "https://youtube.com/@duofresh7615?si=5bDKtOxtZqSsxq0G"
+        "role": "helper",
+        "name": "GUISDAS",
+        "link": "https://www.youtube.com/channel/UCStOCAWwOwOUjRR65-v44zA"
     },
     {
-        "role": "seniormod",
-        "name": "Revalutionary",
-        "link": "https://www.youtube.com/@RevalutionaryGD"
-    },
-    {
-        "role": "mod",
-        "name": "Vibbin",
-        "link": "https://www.youtube.com/@JustVibbin"
-    },
-    {
-        "role": "mod",
-        "name": "pokemon",
-        "link": "#"
-    },
-    {
-        "role": "mod",
-        "name": "Asteria.",
-        "link": "https://www.youtube.com/@Asteriiiaa"
-    },
-    {
-        "role": "mod",
-        "name": "Phantom",
-        "link": "https://www.youtube.com/@PhantomGT7"
-    },
-    {
-        "role": "mod",
-        "name": "Aster",
-        "link": "https://www.youtube.com/channel/UCWl3zGx7VUhQOHBrebhbc-w"
-    },
-    {
-        "role": "dev",
-        "name": "Prometheus",
-        "link": "https://www.youtube.com/c/PrometheusAlt"
-    },
-    {
-        "role": "dev",
-        "name": "Emonadeo",
-        "link": "https://github.com/Emonadeo"
-    },
-    {
-        "role": "dev",
-        "name": "KrisGra",
-        "link": "https://www.youtube.com/channel/UCrB80p9IxnDthH551FpqlwQ"
-    }
-]
+        "role": "helper",
+        "name": "Impostor69",
+        "link": "https://www.youtube.com/@Imp69GD"
+    } 
+]  

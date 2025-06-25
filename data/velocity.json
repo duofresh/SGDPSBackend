@@ -1,0 +1,24 @@
+{
+    "id": 220,
+    "name": "Velocity",
+    "author": "SilicoVolcano",
+    "creators": [],
+    "verifier": "SilicoVolcano",
+    "verification": "https://youtu.be/PpQ2Tg6upXg",
+    "showcase": "https://youtu.be/zflDcpTtz2s",
+    "percentToQualify": 100,
+    "records": [
+      {
+            "user": "Xplode",
+            "link": "https://youtu.be/-Pa-jGixXwo",
+            "percent": 100,
+            "hz": 360
+      },
+      {
+          "user": "hqd",
+            "link": "https://www.youtube.com/watch?v=vBDeusDdjg0&ab_channel=hqd",
+            "percent": 100,
+            "hz": 360
+      }
+    ]
+}

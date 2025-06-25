@@ -1,0 +1,30 @@
+{
+    "id": 7,
+    "name": "idek",
+    "author": "SilicoVolcano",
+    "creators": [],
+    "verifier": "SilicoVolcano",
+    "verification": "https://youtu.be/ZE4vXntg-MA",
+    "showcase": "https://youtu.be/ZE4vXntg-MA",
+    "percentToQualify": 100,
+    "records": [
+        {
+            "user": "Stellarum",
+            "link": "https://youtu.be/pFGFc2rOGE8",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Xplode",
+            "link": "https://youtu.be/-Pa-jGixXwo",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "ivyxwi",
+            "link": "https://youtu.be/ae0RrWhAFzU",
+            "percent": 100,
+            "hz": 360
+        }
+    ]
+}

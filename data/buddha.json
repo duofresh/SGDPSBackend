@@ -1,0 +1,18 @@
+{
+    "id": 634,
+    "name": "Buddha",
+    "author": "Stellarum",
+    "creators": [],
+    "verifier": "Stellarum",
+    "verification": "https://youtu.be/q2eLySfWadU",
+    "showcase": "https://youtu.be/q2eLySfWadU",
+    "percentToQualify": 40,
+    "records": [
+      {
+          "user": "TurtleER",
+            "link": "https://youtu.be/9JxzYDDZnsI",
+            "percent": 100,
+            "hz": 360
+      }   
+    ]
+}

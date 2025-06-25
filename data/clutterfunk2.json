@@ -1,0 +1,18 @@
+{
+    "id": 225,
+    "name": "Clutterfunk 2",
+    "author": "SilicoVolcano",
+    "creators": [],
+    "verifier": "SilicoVolcano",
+    "verification": "https://youtu.be/xNGHvPeJiuM",
+    "showcase": "https://youtu.be/xNGHvPeJiuM",
+    "percentToQualify": 100,
+    "records": [
+     {
+            "user": "Xplode",
+            "link": "https://youtu.be/-Pa-jGixXwo",
+            "percent": 100,
+            "hz": 360  
+      } 
+    ]
+}

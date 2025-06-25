@@ -76,7 +76,8 @@ router.get('/user/stats', authenticate, async (req: AuthenticatedRequest, res: R
             try {
                 const levelData = await readJSON(path.join(LEVELS_DIR, `${levelPath}.json`));
                 const levelName = levelPath;
-                const difficulty = levelData.difficulty || 0;
+                // Since difficulty field doesn't exist in new structure, use a default value
+                const difficulty = 0; // Default to easiest difficulty
                 const points = score(difficulty);
                 
                 // Handle verifier points (same as leaderboard)
@@ -117,7 +118,8 @@ router.get('/user/stats', authenticate, async (req: AuthenticatedRequest, res: R
                         leveltype = 4; // megacollab
                     }
 
-                    const pointsForThisLevel = levelData.rating ? (levelData.rating * 4 / leveltype) : 0;
+                    // Since rating field doesn't exist in new structure, use a default value
+                    const pointsForThisLevel = 10; // Default creator points
 
                     for (const rawCreatorName of currentLevelCreators) {
                         const creatorName = Object.keys(creatorMap).find(

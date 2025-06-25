@@ -190,13 +190,12 @@ Returns all levels in the order specified by `_list.json`, including their full 
 
 ### GET /api/list-metadata
 
-Returns the contents of `_list.json` and `_packlist.json`.
+Returns the contents of `_list.json`.
 
 **Response:**
 ```json
 {
-  "list": [ "level1", "level2", ... ],
-  "packlist": [ ... ]
+  "list": [ "level1", "level2", ... ]
 }
 ```
 

@@ -1,0 +1,46 @@
+{
+    "id": 1,
+    "name": "Crystalline",
+    "author": "Stellarum",
+    "creators": [],
+    "verifier": "Stellarum",
+    "verification": "https://youtu.be/m9orruxRi3U",
+    "showcase": "https://youtu.be/m9orruxRi3U",
+    "percentToQualify": 100,
+    "records": [
+      {
+            "user": "MMitochondria",
+            "link": "https://youtu.be/uhXe4-kDfZA",
+            "percent": 100,
+            "hz": 280
+        },
+      {
+            "user": "Xplode",
+            "link": "https://youtu.be/-Pa-jGixXwo",
+            "percent": 100,
+            "hz": 360
+        },
+      {
+            "user": "Rezi",
+            "link": "https://www.youtube.com/watch?v=Kz1qAbJVxSM",
+            "percent": 100,
+            "hz": 120
+        },
+      {     "user": "TurtleER",
+            "link": "https://www.youtube.com/watch?v=12l6vU9s2ME",
+            "percent": 100,
+            "hz": 360
+      },     
+      {     "user": "nadire",
+            "link": "https://youtu.be/rT1c1hWwo7Y",
+            "percent": 100,
+            "hz": 120
+      },  
+      {     "user": "Celected",
+            "link": "https://www.youtube.com/watch?v=gqYocYGbAvw",
+            "percent": 100,
+            "hz": 360
+      }
+   ]
+}            
+    

@@ -1,0 +1,24 @@
+{
+    "id": 14,
+    "name": "lukacora",
+    "author": "lukeisbes",
+    "creators": [],
+    "verifier": "lukeisbes",
+    "verification": "https://youtu.be/P0vf0hilLzE",
+    "showcase": "https://youtu.be/P0vf0hilLzE",
+    "percentToQualify": 63,
+    "records": [
+       {
+            "user": "Xplode",
+            "link": "https://youtu.be/-Pa-jGixXwo",
+            "percent": 100,
+            "hz": 360
+       },
+      {
+            "user": "ivyxwi",
+            "link": "https://youtu.be/ObXojL97_08",
+            "percent": 100,
+            "hz": 360
+       }
+    ]
+}

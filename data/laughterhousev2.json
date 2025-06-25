@@ -1,0 +1,38 @@
+{
+    "id": 249,
+    "name": "laughterhouse v2",
+    "author": "stardust990",
+    "creators": [],
+    "verifier": "stardust990",
+    "verification": "https://youtu.be/25_MCUgMMWs",
+    "showcase": "https://youtu.be/25_MCUgMMWs",
+    "percentToQualify": 100,
+    "records": [
+       {
+            "user": "MMitochondria",
+            "link": "https://www.youtube.com/watch?v=0TssOOb2aqg&feature=youtu.be",
+            "percent": 100,
+            "hz": 280
+        },
+      {
+            "user": "Rezi",
+            "link": "https://youtu.be/Pb-BEm9P0e0",
+            "percent": 100,
+            "hz": 144
+        },
+      {
+            "user": "Hykre",
+            "link": "https://youtu.be/-xDzN0vgyOw",
+            "percent": 100,
+            "hz": 360
+ 
+        },
+      {
+            "user": "rRorTa",
+            "link": "https://youtu.be/pyJzdPp0HIc",
+            "percent": 100,
+            "hz": 360
+           
+      }
+   ]  
+} 

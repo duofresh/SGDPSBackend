@@ -1,0 +1,18 @@
+{
+    "id": 85438299,
+    "name": "Ultimate Cognition Mix",
+    "author": "Stellarum",
+    "creators": [],
+    "verifier": "youngs",
+    "verification": "https://youtu.be/m-Ge5VHxcLA",
+    "showcase": "https://youtu.be/m6sxVhGoE9o",
+    "percentToQualify": 63,
+    "records": [
+        {
+            "user": "MMitochondria",
+            "link": "https://www.youtube.com/watch?v=9NUR2ZI60f0",
+            "percent": 100,
+            "hz": 280
+        }
+    ]
+}

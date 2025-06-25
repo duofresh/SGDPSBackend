@@ -1,0 +1,28 @@
+{
+    "id": 371,
+    "name": "AntiGeometry",
+    "author": "Baba",
+    "creators": [],
+    "verifier": "Baba",
+    "verification": "https://youtu.be/zmL5ctnz1mo",
+    "showcase": "https://youtu.be/zmL5ctnz1mo",
+    "percentToQualify": 100,
+    "records": [
+      {
+            "user": "Celected",
+            "link": "https://www.youtube.com/watch?v=He3iERVNBsc",
+            "percent": 100,
+            "hz": 360
+      },
+      {
+          "user": "TurtleER",
+            "link": "https://youtu.be/9JxzYDDZnsI",
+            "percent": 100,
+            "hz": 360
+      }   
+    ]
+}
+ 
+      
+    
+

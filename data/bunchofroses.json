@@ -1,0 +1,18 @@
+{
+    "id": 3,
+    "name": "bunch of roses",
+    "author": "Stellarum",
+    "creators": [],
+    "verifier": "Stellarum",
+    "verification": "https://youtu.be/H-s9NpzJTaA",
+    "showcase": "https://youtu.be/H-s9NpzJTaA",
+    "percentToQualify": 75,
+    "records": [
+      {
+            "user": "Xplode",
+            "link": "https://youtu.be/-Pa-jGixXwo",
+            "percent": 100,
+            "hz": 360
+      }     
+    ]
+}

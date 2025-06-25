@@ -18,7 +18,6 @@ const path_1 = __importDefault(require("path"));
 const promises_1 = __importDefault(require("fs/promises"));
 const router = (0, express_1.Router)();
 const LIST_PATH = path_1.default.join(__dirname, '../../data/_list.json');
-const PACKLIST_PATH = path_1.default.join(__dirname, '../../data/_packlist.json');
 const LEVELS_DIR = path_1.default.join(__dirname, '../../data');
 const EDITORS_PATH = path_1.default.join(__dirname, '../../data/_editors.json');
 router.get('/ordered-levels', (_req, res) => __awaiter(void 0, void 0, void 0, function* () {
@@ -30,7 +29,7 @@ router.get('/ordered-levels', (_req, res) => __awaiter(void 0, void 0, void 0, f
             const levelPath = path_1.default.join(LEVELS_DIR, filename);
             try {
                 const fileContent = yield promises_1.default.readFile(levelPath, 'utf-8');
-                const parsedContent = JSON.parse(fileContent); // Parse and format
+                const parsedContent = JSON.parse(fileContent);
                 orderedLevels.push({ filename, content: parsedContent });
             }
             catch (err) {
@@ -43,18 +42,16 @@ router.get('/ordered-levels', (_req, res) => __awaiter(void 0, void 0, void 0, f
         res.status(500).json({ error: 'Failed to load ordered levels' });
     }
 }));
-// New endpoint for just _list.json and _packlist.json
+// Updated endpoint for just _list.json (removed packlist reference)
 router.get('/list-metadata', (_req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const list = yield promises_1.default.readFile(LIST_PATH, 'utf-8');
-        const packlist = yield promises_1.default.readFile(PACKLIST_PATH, 'utf-8');
         res.json({
-            list: JSON.parse(list),
-            packlist: JSON.parse(packlist),
+            list: JSON.parse(list)
         });
     }
     catch (err) {
-        res.status(500).json({ error: 'Failed to load list or packlist' });
+        res.status(500).json({ error: 'Failed to load list' });
     }
 }));
 router.get('/level/:entry', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
@@ -90,7 +87,7 @@ router.get('/ordered-ids', (_req, res) => __awaiter(void 0, void 0, void 0, func
             try {
                 const fileContent = yield promises_1.default.readFile(levelPath, 'utf-8');
                 const parsedContent = JSON.parse(fileContent);
-                // Assuming the numeric ID is stored as 'id' in each level file
+                // The numeric ID is stored as 'id' in each level file
                 if (typeof parsedContent.id === 'number') {
                     ids.push(parsedContent.id);
                 }

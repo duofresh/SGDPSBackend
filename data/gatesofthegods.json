@@ -1,0 +1,30 @@
+{
+    "id": 369,
+    "name": "Gates of the Gods",
+    "author": "Baba",
+    "creators": [],
+    "verifier": "Baba",
+    "verification": "https://youtu.be/XtDpqhtAy6k",
+    "showcase": "https://youtu.be/XtDpqhtAy6k",
+    "percentToQualify": 62,
+    "records": [
+        {
+          "user": "GUISDAS",
+            "link": "https://www.youtube.com/watch?v=i1KHtq6JVzw",
+            "percent": 100,
+            "hz": 360
+      },   
+      {
+          "user": "TurtleER",
+            "link": "https://www.youtube.com/watch?v=7Ab6c_qn5Xg",
+            "percent": 100,
+            "hz": 360
+      },   
+      {     
+           "user": "Celected",
+            "link": "https://www.youtube.com/watch?v=KgitX9aHAZI",
+            "percent": 96,
+            "hz": 360
+       }
+    ]
+}

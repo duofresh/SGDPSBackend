@@ -1,0 +1,30 @@
+{
+    "id": 7,
+    "name": "Ultimate Cognition Mix",
+    "author": "Stellarum",
+    "creators": [],
+    "verifier": "youngs",
+    "verification": "https://www.youtube.com/watch?v=9NUR2ZI60f0",
+    "showcase": "https://youtu.be/B9i_ZYLpPcg",
+    "percentToQualify": 63,
+    "records": [
+        {
+            "user": "MMitochondria",
+            "link": "https://www.youtube.com/watch?v=9NUR2ZI60f0",
+            "percent": 100,
+            "hz": 280
+        },
+        {  
+            "user": "Xplode",
+            "link": "https://youtu.be/-Pa-jGixXwo",
+            "percent": 100,
+            "hz": 360
+       },
+      {
+          "user": "TurtleER",
+            "link": "https://youtu.be/9JxzYDDZnsI",
+            "percent": 100,
+            "hz": 360
+      }   
+    ]
+}

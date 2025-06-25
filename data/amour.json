@@ -1,0 +1,18 @@
+{
+    "id": 2,
+    "name": "Amour",
+    "author": "Stellarum",
+    "creators": [],
+    "verifier": "Stellarum",
+    "verification": "https://youtu.be/MXhsyX0GHAo",
+    "showcase": "https://youtu.be/ZE4vXntg-MA",
+    "percentToQualify": 100,
+    "records": [
+      {
+            "user": "Xplode",
+            "link": "https://youtu.be/-Pa-jGixXwo",
+            "percent": 100,
+            "hz": 360
+      }
+    ]
+}

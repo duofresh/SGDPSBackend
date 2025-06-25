@@ -1,0 +1,48 @@
+{
+    "id": 4,
+    "name": "JoshDeluxe Burger Redux",
+    "author": "Stellarum",
+    "creators": [],
+    "verifier": "Stellarum",
+    "verification": "https://youtu.be/m-Ge5VHxcLA",
+    "showcase": "https://youtu.be/m6sxVhGoE9o",
+    "percentToQualify": 49,
+    "records": [
+        {
+            "user": "TurtleER",
+            "link": "https://youtu.be/IV8XXbJPhbw",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "Xplode",
+            "link": "https://youtu.be/-Pa-jGixXwo",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "zLunar",
+            "link": "https://youtu.be/XLZ74xBlD5w",
+            "percent": 100,
+            "hz": 360
+        },
+        {    
+            "user": "kqir9n",
+            "link": "https://youtu.be/Rqf-2QnqNS4",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "ivyxwi",
+            "link": "https://youtu.be/8kDu4vPe9iw",
+            "percent": 100,
+            "hz": 360
+        },
+        {
+            "user": "MMitochondria",
+            "link": "https://www.youtube.com/watch?v=SZf9ss1qap8",
+            "percent": 64,
+            "hz": 280
+        }
+    ]
+}
