@@ -18,14 +18,52 @@ const REJECTED_PATH = path.join(__dirname, '../../data/rejected-submissions.json
 const LEVELS_DIR = path.join(__dirname, '../../data/');
 const LIST_METADATA_PATH = path.join(LEVELS_DIR, '_list.json');
 
-// Score function from score.js
-function score(difficulty: number): number {
-    return [10, 20, 40, 70, 120][difficulty] || 0;
+// Numbers of decimal digits to round to
+const scale = 3;
+
+/**
+ * Calculate the score awarded when having a certain percentage on a list level
+ * @param {Number} rank Position on the list
+ * @param {Number} percent Percentage of completion
+ * @param {Number} minPercent Minimum percentage required
+ * @returns {Number}
+ */
+function score(rank: number, percent: number, minPercent: number): number {
+    if (rank > 150) {
+        return 0;
+    }
+    if (rank > 75 && percent < 100) {
+        return 0;
+    }
+
+    // New formula
+    let score = (-24.9975*Math.pow(rank-1, 0.4) + 200) *
+        ((percent - (minPercent - 1)) / (100 - (minPercent - 1)));
+
+    score = Math.max(0, score);
+
+    if (percent != 100) {
+        return round(score - score / 3);
+    }
+
+    return Math.max(round(score), 0);
 }
 
-// Round function from score.js
 function round(num: number): number {
-    return Math.round(num * 1000) / 1000;
+    if (!('' + num).includes('e')) {
+        return +(Math.round(Number(num + 'e+' + scale)) + 'e-' + scale);
+    } else {
+        var arr: string[] = ('' + num).split('e');
+        var sig: string = '';
+        if (+arr[1] + scale > 0) {
+            sig = '+';
+        }
+        return +(
+            Math.round(Number(+arr[0] + 'e' + sig + (+arr[1] + scale))) +
+            'e-' +
+            scale
+        );
+    }
 }
 
 router.get('/user/stats', authenticate, async (req: AuthenticatedRequest, res: Response) => {
@@ -56,7 +94,7 @@ router.get('/user/stats', authenticate, async (req: AuthenticatedRequest, res: R
         }
 
         // Track user's completed levels and points
-        const userLevels: { name: string; points: number }[] = [];
+        const userLevels: { name: string; points: number; type: 'completed' | 'verified' }[] = [];
         let acceptedCount = 0;
 
         // Track all users and their points for ranking (using same approach as leaderboard)
@@ -72,13 +110,13 @@ router.get('/user/stats', authenticate, async (req: AuthenticatedRequest, res: R
         }} = {};
 
         // Process each level file from the official list
-        for (const levelPath of list) {
+        for (let i = 0; i < list.length; i++) {
+            const levelPath = list[i];
             try {
                 const levelData = await readJSON(path.join(LEVELS_DIR, `${levelPath}.json`));
                 const levelName = levelPath;
-                // Since difficulty field doesn't exist in new structure, use a default value
-                const difficulty = 0; // Default to easiest difficulty
-                const points = score(difficulty);
+                const rank = i + 1; // Rank is position in the list (1-based)
+                const minPercent = levelData.percentToQualify || 100; // Default to 100 if not specified
                 
                 // Handle verifier points (same as leaderboard)
                 if (levelData.verifier) {
@@ -91,12 +129,21 @@ router.get('/user/stats', authenticate, async (req: AuthenticatedRequest, res: R
                         completed: []
                     };
                     
+                    // Verifier gets full points for 100% completion
+                    const verifierPoints = score(rank, 100, minPercent);
+                    
                     scoreMap[verifier].verified.push({
                         rank: 0, // We don't need rank for this
                         level: levelName,
-                        score: points,
+                        score: verifierPoints,
                         path: levelName
                     });
+
+                    // Add verified levels to user's completed levels if they are the verifier
+                    if (verifier.toLowerCase() === username.toLowerCase()) {
+                        acceptedCount++;
+                        userLevels.push({ name: levelName, points: verifierPoints, type: 'verified' });
+                    }
                 }
 
                 // Handle creator points
@@ -154,20 +201,27 @@ router.get('/user/stats', authenticate, async (req: AuthenticatedRequest, res: R
                                 completed: []
                             };
                             
+                            // Calculate points based on actual completion percentage
+                            const percent = record.percent || 100;
+                            const userPoints = score(rank, percent, minPercent);
+                            
                             // Only add if this level isn't already in completed
                             if (!scoreMap[user].completed.some(c => c.path === levelName)) {
                                 scoreMap[user].completed.push({
                                     rank: 0, // We don't need rank for this
                                     level: levelName,
-                                    score: points,
+                                    score: userPoints,
                                     path: levelName
                                 });
                             }
 
                             // Track user's own completed levels
                             if (user.toLowerCase() === username.toLowerCase()) {
-                                acceptedCount++;
-                                userLevels.push({ name: levelName, points });
+                                // Only add if not already added as verified
+                                if (!userLevels.some(l => l.name === levelName)) {
+                                    acceptedCount++;
+                                    userLevels.push({ name: levelName, points: userPoints, type: 'completed' });
+                                }
                             }
                         }
                     });
@@ -220,7 +274,7 @@ router.get('/user/stats', authenticate, async (req: AuthenticatedRequest, res: R
                 rank,
                 totalUsers: userTotals.length,
                 completedLevels: userLevels.sort((a, b) => b.points - a.points),
-                acceptedSubmissions: userLevels.map(l => ({ name: l.name })),
+                acceptedSubmissions: userLevels.map(l => ({ name: l.name, type: l.type })),
                 pendingSubmissions: pendingSubmissions.map((s: any) => ({ level: s.level, link: s.link, queuePosition: s.queuePosition })),
                 rejectedSubmissions: rejectedSubmissions.map((s: any) => ({ level: s.level, link: s.link, reason: s.reason })),
                 creatorPoints,
