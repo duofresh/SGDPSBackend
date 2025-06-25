@@ -14,7 +14,7 @@ jobs:
         env:
           JWT: ${{ secrets.OWNER_JWT }}
         run: |
-          curl -H "Authorization: Bearer $JWT" https://tslwithbackend-production.up.railway.app/api/download-data -o data.zip
+          curl -H "Authorization: Bearer $JWT" https://sgdpsbackend.onrender.com/api/download-data -o data.zip
           rm -rf data
           unzip data.zip -d data
 
