@@ -2,8 +2,7 @@
 
 # FAQ
 
-## This repo is now private so if you're not part of the Shitty List staff or dev team, report to Prometheus
-
+## This repo is an early version of the current TSL Backend
 ---
 
 ### Backend structure
@@ -18,67 +17,7 @@ please reconsider or contact me on discord @duofresh.
 
 ---
 
-### List FAQ
-
-How long will my record take to get accepted?
-
-- Be real, it'll probably take 3 months, please be patient
-
-What do New record, update record, and fix record mean?
-
-- new record is when your submitting a record for a level for the first time,
-  update record is when you have a record on a level but you got a new best and
-  it needs to be updated, fix record is when there is an issue with one of your
-  records that needs to be fixed
-
-What's an easy way to prove I don't hack?
-
-- Show 2-5 seconds at the end of the previous attempt and the death of that
-  attempt. This is the easiest way for us to verify you arent hacking/nocliping.
-  However having click, fps counter or hand cam will help out a lot too
-
-It's been like more than a week and my record still hasn't been added, what do i
-do?
-
-- You can ask us in
-  [#list-support](https://discord.com/channels/713151800932433972/744151240765603951)
-  , it was probably an accidentally deleted record(yes it happens), accidentally
-  deleting the form, your name was mispelled or you were rejected for cheating
-
-When will \_\_\_ be added to the list?
-
-- With the way our current system works, the staff and relaibles play the
-  levels, if the level gets enough positive opinions from us, it then goes into
-  voting, where it is voted on if it will be added
-
-Can i submit Multiple levels on 1 video?
-
-- Yes
-
----
-
-## More Coming Soon!
-
-# List Staff Team
-
----
-
-## Owners:
-
-- Prometheus
-
----
-
-## List Admins:
-
-- DuoFresh
-- sorrym8
-- Homegrowntag
-
 ## Repo Maintainers:
-
-- Prometheus
-- Emonadeo
 - DuoFresh
 
 ---
